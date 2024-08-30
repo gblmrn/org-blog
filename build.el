@@ -25,16 +25,22 @@
 ;; Define the publishing project
 (setq org-publish-project-alist
       (list
-       (list "org-site"
-             :recursive t
-             :base-directory "./content"
-             :publishing-directory "./public"
-             :publishing-function 'org-html-publish-to-html
-             :with-author nil  ;; Don't include author name
-             :with-creator nil ;; Don't include Emacs and Org versions in footer
-             :with-toc nil     ;; Don't include a table of contents
-             :section-numbers nil    ;; Don't include section numbers
-             :time-stamp-file nil)))    ;; Don't include time stamp in file
+       '("org-site:main"
+         :recursive t
+         :base-directory "./content"
+         :publishing-directory "./public"
+         :publishing-function org-html-publish-to-html
+         :with-author nil      ;; Don't include author name
+         :with-creator nil     ;; Don't include Emacs and Org versions in footer
+         :with-toc nil         ;; Don't include a table of contents
+         :section-numbers nil  ;; Don't include section numbers
+         :time-stamp-file nil) ;; Don't include time stamp in file
+       '("org-site:assets"
+         :base-directory "./assets"
+         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|woff2\\|ttf\\|zip"
+         :publishing-directory "./public"
+         :recursive t
+         :publishing-function org-publish-attachment)))
 
 (setq org-html-validation-link nil)
 

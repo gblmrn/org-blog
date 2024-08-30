@@ -3,4 +3,4 @@
 [[https://github.com/gbrlmarn][github.com/gbrlmarn]]\\
 [[https://linkedin.com/in/maringabriel][linkedin.com/in/maringabriel]]\\
 [[https://mastodon.social/@gbrlmarn][mastodon.social/@gbrlmarn]]\\
-[[file:../assets/cv/gmarin.pdf][Curriculum Viate]]
+[[file:./cv/gmarin.pdf][Curriculum Viate]]

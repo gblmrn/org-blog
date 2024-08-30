@@ -15,6 +15,15 @@ jobs:
       - name: Install Emacs
         run: sudo apt install emacs-nox --yes
 
+      - name: Install xelatex
+        run: sudo apt install texlive-xetex --yes
+
+      - name: Install texlive-lang-italian
+        run: sudo apt install texlive-lang-italian --yes
+
+      - name: Install fonts-recommended
+        run: sudo apt install fonts-recommended --yes
+
       - name: Build the site
         run: ./build.sh
 

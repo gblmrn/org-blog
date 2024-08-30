@@ -1,4 +1,5 @@
 #+title: Gabriel Marin
 
 [[https://github.com/gbrlmarn][github.com/gbrlmarn]]\\
-[[https://linkedin.com/in/maringabriel][linkedin.com/in/maringabriel]]
+[[https://linkedin.com/in/maringabriel][linkedin.com/in/maringabriel]]\\
+[[https://mastodon.social/@gbrlmarn][mastodon.social/@gbrlmarn]]

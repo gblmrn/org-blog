@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Check out
         uses: actions/checkout@v1
@@ -19,7 +19,7 @@ jobs:
         run: ./build.sh
 
       - name: Publish generated content to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@latest
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
           folder: public

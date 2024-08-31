@@ -1,7 +1,41 @@
+;;; publish.el --- Build gbrlmarn.github.io/org-blog
+
+;; Copyright (C) 2024 Gabriel Marin <marin.gabriel@protonmail.com>
+
+;; Author: Gabriel Marin <marin.gabriel@protonmail.com>
+;; Maintainer: Gabriel Marin <marin.gabriel@protonmail.com>
+;; URL: https://github.com/gbrlmarn/org-blog
+;; Version: 0.0.1
+;; Package-Requires: ((emacs "28.2"))
+;; Keywords: hypermedia, blog, feed, rss
+
+;; This file is not part of GNU Emacs.
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Docs License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Docs License for more details.
+;;
+;; You should have received a copy of the GNU General Docs License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Usage:
+;; emacs -Q --script build.el
+
+;;; Code:
+
+;; Initialize package sources
+(require 'package)
+
 ;; Set the package installation directory so that packages aren't stored in the
 ;; ~/.emacs.d/elpa path.
-(require 'package)
 (setq package-user-dir (expand-file-name "./.packages"))
+
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
 
@@ -15,6 +49,10 @@
 
 ;; Load the publishing system
 (require 'ox-publish)
+
+;; Custom options used for publishing
+(setq make-backup-files nil      ;; Don't make backup files
+      org-export-with-latex nil) ;; Don't export .tex files
 
 ;; Customize the HTML output
 (setq org-html-validation-link nil            ;; Don't show validation link
@@ -48,3 +86,4 @@
 (org-publish-all t)
 
 (message "Build complete")
+;;; build.el ends here

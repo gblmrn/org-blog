@@ -8,7 +8,7 @@
 | Website  | [[https://gbrlmarn.github.io][gbrlmarn.github.io]]                      |
 ** *Experience*
 #+ATTR_LATEX: :environment tabular :align {>{\raggedleft}p{2.3cm}|p{14cm}}
-| 2022-Present | *Software Engineer* at Luxoft, Bucharest                           |
+| 2022-Present | *Software Engineer* at Luxoft                        |
 |              | Maintained project building environment using CMake.               |
 |              | Done socket programming using ZeroMQ library in C/C++.             |
 |              | Automated environment configuration using Docker and Bash.         |
@@ -17,16 +17,16 @@
 |              | Developed certificate viewer in C++ using OpenSSL API.             |
 |              | Refactored multiple repositories according to coding guidelines.   |
 #+ATTR_LATEX: :environment tabular :align {>{\raggedleft}p{2.3cm}|p{14cm}}
-| 2021-2022 | *Software Engineer* at Continental, Sibiu                 |
-|           | Worked on XML generator using Java and AUTOSAR library.   |
+| 2021-2022 | *Software Engineer* at Continental                        |
+|           | Worked on XML generator using Java and /AUTOSAR/ library. |
 |           | Converted JSON to XML data using Python.                  |
 #+ATTR_LATEX: :environment tabular :align {>{\raggedleft}p{2.3cm}|p{14cm}} 
-| 2019-2021 | *System Engineer* at Ministry of Internal Affairs, Rm.Valcea     |
-|           | Developed scripts for task automation with PowerShell.           |
-|           | Deployed and configured Radius server and Squid proxy.           |
-| 2018-2019 | *Middleware Engineer* at Ministry of Internal Affairs, Bucharest |
-|           | Provided layer 1 support.                                        |
-|           | Managed users access in Oracle SQL database.                     |
+| 2019-2021 | *System Engineer* at Ministry of Internal Affairs      |
+|           | Developed scripts for task automation with PowerShell. |
+|           | Deployed and configured Radius server and Squid proxy. |
+| 2018-2019 | *Middleware Engineer* at Ministry of Internal Affairs  |
+|           | Provided layer 1 support.                              |
+|           | Managed users access in Oracle SQL database.           |
 
 ** *Education*
 #+ATTR_LATEX: :environment tabular :align {>{\raggedleft}p{2.3cm}|p{14cm}}

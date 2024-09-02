@@ -8,7 +8,7 @@
 # Unicode support(circles) + font selection
 #+LATEX_HEADER:\usepackage{unicode-math}
 #+LATEX_HEADER:\usepackage{fontspec}
-#+LATEX_HEADER:\setmainfont{Liberation Serif} 
+#+LATEX_HEADER:\setmainfont{Liberation Serif}
 
 # Hide page number
 #+LATEX_HEADER:\pagenumbering{gobble}

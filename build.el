@@ -73,6 +73,12 @@
          :with-toc nil         ;; Don't include a table of contents
          :section-numbers nil  ;; Don't include section numbers
          :time-stamp-file nil) ;; Don't include time stamp in file
+       '("org-site:cv"
+         :base-directory "./assets/cv"
+         :base-extensions "org"
+         :exclude "template.org"             ;; It is used for cv formating
+         :publishing-directory "./assets/cv" ;; Compile cv from org to pdf in the same dir
+         :publishing-function org-latex-publish-to-pdf)
        '("org-site:assets"
          :base-directory "./assets"
          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|woff2\\|ttf\\|zip"
